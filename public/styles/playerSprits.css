@@ -1,0 +1,140 @@
+
+.player {
+  position: absolute;
+  width: 3.75rem;
+  height: 5.625rem;
+  cursor: pointer;
+}
+ 
+.nameTagContainer
+{
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: auto;
+   height: auto;
+}
+.nameTag
+{
+  position: absolute;
+  top: -1.875rem;
+  max-width: 10rem;
+  min-width: auto;
+  height: auto;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.triangulo
+{  
+  position: absolute;
+  border-left:0.5rem solid transparent;
+  border-right:0.5rem solid transparent;
+  border-top:0.5rem solid #FFF;
+  top:-0.625rem;
+
+} 
+/* player boy */
+.playerBoyUpFirstMoviment
+{
+  background: url("../assets/userSprits/boy_run20.png");
+}
+.playerBoyUpSecondMoviment
+{
+  background: url("../assets/userSprits/boy_run18.png");
+}
+
+.playerBoyDownFirstMoviment
+{
+  background: url("../assets/userSprits/boy_run5.png");
+}
+
+.playerBoyDownSecondMoviment
+{
+  background: url("../assets/userSprits/boy_run4.png");
+}
+
+.playerBoyRightFirstMoviment
+{
+  background: url("../assets/userSprits/boy_run12.png");
+}
+
+.playerBoyRightSecondMoviment
+{
+  background: url("../assets/userSprits/boy_run11.png");
+}
+
+
+.playerBoyLeftFirstMoviment
+{
+  background: url("../assets/userSprits/boy_run13.png");
+}
+
+.playerBoyLeftSecondMoviment
+{
+  background: url("../assets/userSprits/boy_run15.png");
+}
+
+/* player girl */
+.playerGirlUpFirstMoviment
+{
+  background: url("../assets/userSprits/girl_run_218.png");
+}
+.playerGirlUpSecondMoviment
+{
+  background: url("../assets/userSprits/girl_run_220.png");
+}
+
+.playerGirlDownFirstMoviment
+{
+  background: url("../assets/userSprits/girl_run_27.png");
+}
+
+.playerGirlDownSecondMoviment
+{
+  background: url("../assets/userSprits/girl_run_29.png");
+}
+
+.playerGirlRightFirstMoviment
+{
+  background: url("../assets/userSprits/girl_run_215.png");
+}
+
+.playerGirlRightSecondMoviment
+{
+  background: url("../assets/userSprits/girl_run_214.png");
+}
+
+.playerGirlLeftFirstMoviment
+{
+  background: url("../assets/userSprits/girl_run_211.png");
+}
+
+.playerGirlLeftSecondMoviment
+{
+  background: url("../assets/userSprits/girl_run_212.png");
+}
+
+.playerGirlUpFirstMoviment,
+.playerGirlUpSecondMoviment,
+.playerGirlDownFirstMoviment,
+.playerGirlDownSecondMoviment,
+.playerGirlRightFirstMoviment,
+.playerGirlRightSecondMoviment,
+.playerGirlLeftFirstMoviment,
+.playerGirlLeftSecondMoviment,
+.playerBoyUpFirstMoviment,
+.playerBoyUpSecondMoviment,
+.playerBoyDownFirstMoviment,
+.playerBoyDownSecondMoviment,
+.playerBoyRightFirstMoviment,
+.playerBoyRightSecondMoviment,
+.playerBoyLeftFirstMoviment,
+.playerBoyLeftSecondMoviment
+{
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,120 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link href="//db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="./public/styles/style.css">
+<link rel="stylesheet" href="./public/styles/playerSprits.css">
+<link rel="shortcut icon" href="./public/assets/logo/logoPokeball.png">
+
+<main>
+  <header>
+        <div class="logoContainer">
+          <img src="./public/assets/logo/logoPokeball.png" alt="pokebola" title="pokebola">
+          <Strong>
+            PokeCamp
+          </Strong>
+        </div>
+        <div class="settingsContainer">
+          <div class="aboutGame">
+             <img src="./public/assets/settings/question.png" class="settingsButton" id="aboutGameBtn" title="icone para ver sobre o jogo" alt="question">
+             <div class="aboutGameDescription">
+              <strong>
+                para subir de nivel voce deve pegar pokebolas , elas espawan aleatoriamente
+                dentro da area verde do mapa , algumas pokebolas são intangiveis e não contam pontos,
+                cada tipo de pokebola vale um valor diferente de pontos e cada pokebola tem uma chance diferente de aparecer no mapa 
+              </strong>
+              <div class="pokeballsValues">
+                <div >
+                  <img src="./public/assets/pokeballs/pokeball.png" alt="pokebola">
+                  <p> = 10</p>
+                </div>
+                <div>
+                  <img src="./public/assets/pokeballs/greatBall.webp" alt="greatball">
+                  <p> = 15</p>
+                </div>
+                <div>
+                  <img src="./public/assets/pokeballs/masterBall.png" alt="masterball">
+                  <p> = 20</p>
+                </div>
+
+              </div>
+             </div>
+          </div>
+          <div class="aboutUser">
+            <img src="./public/assets/settings/user.png" id="userSettingsBtn" class="settingsButton" alt="user">
+            <div class="aboutUserDescription">
+              <strong>
+                configurações do usuario
+              </strong>
+              <div class="userDescription"></div>
+            </div>
+          </div>
+          <img src="./public/assets/settings/play.png" id="audio" class="settingsButton" title="icone para ativar ou desativar o som" alt="play">
+        </div>
+  </header>
+  <div id="userConfigContainer">
+    <div class="userName">
+      <h2>Qual é o seu nome de treinador ?</h2>
+      <input type="text" id="name" maxlength="20">
+    </div>
+    <div class="userTreiner">
+       <h2>
+        Escolha seu treinador
+       </h2>
+       <div>
+        <img src="./public/assets/userSprits/boy.png" class="character" alt="treinador"/>
+        <img src="./public/assets/userSprits/girl.png" class="character" alt="treinadora"/>
+       </div>
+    </div>
+    <button id="submitUser"> Concluir</button>
+  </div>
+
+  <div id="gameScreenContainer">
+      <div id="canvas"></div>
+      <div class="chatContainer">
+       <div class="chatOptions">
+          <strong class="btnPlayers">
+             Players
+          </strong>
+          <strong class="btnChat">
+            Chat
+          </strong>
+       </div>
+       <div class="players"></div>
+       <div class="chat">
+        <div id="chatMessagens"></div>
+        <div class="groupBox">
+          <textarea id="message" rows="5" cols="33">
+          </textarea>
+          <button id="submit">Enviar</button>
+        </div>
+       </div>
+      </div>
+   <div id="spwanPokeball" ></div>
+  </div>
+
+<footer>
+  <strong>
+    <img src="./public/assets/ui/peDeFolha.png" alt="imagem de folha">
+    Lucas Henrique @2022
+  </strong>
+  <img src="./public/assets/ui/folha1.png" alt="imagem de folha">
+</footer>
+
+  <audio loop>
+    <source src="./public/assets/audio/pokeMusic.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+</main>
+
+<script src="./socket.io/socket.io.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<script src="./public/scripts/userConfig.js" ></script>
+
+
+<script src="./public/scripts/mensagem.js" ></script>
+<script src="./public/scripts/renderPokeball.js" ></script>
+<script src="./public/scripts/render.js" ></script>
+<script src="./public/scripts/renderPlayersOnline.js" ></script>
+<script src="./public/scripts/index.js" ></script>
+<script src="./public/scripts/socketConfig.js"></script>
+<script src="./public/scripts/renderUserConfig.js"></script>
