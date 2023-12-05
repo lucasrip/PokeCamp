@@ -6,12 +6,11 @@
   },
   "scripts": {
     "start": "node",
-    "dev": "nodemon",
-    "build": "./index.js"
+    "dev": "nodemon"
   },
   "name": "p2project",
   "version": "1.0.0",
-  "main": "./index.js",
+  "main": "index.js",
   "author": "",
   "license": "ISC",
   "description": ""
