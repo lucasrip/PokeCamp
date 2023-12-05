@@ -1,3 +1,4 @@
+
 const pokeArea = document.getElementById("spwanPokeball");
 let xp = 0;
 
@@ -6,8 +7,7 @@ const submit = document.getElementById("submit");
 
 function startGame() {
   var socket = io();
-  const socketUrl="https://pokecamp.vercel.app/";
-  socket.connect(socketUrl)
+
 
   choiceScreen.style.display = "none";
   gameScreen.style.display = "flex";
