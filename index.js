@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
 let users = {};
 let posts = [];
 
+
 io.on("connection", (socket) => {
   socket.on("defineUserConfig", (user) => (users[socket.id] = user));
 
