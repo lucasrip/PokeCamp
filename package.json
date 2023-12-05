@@ -7,11 +7,10 @@
   "scripts": {
     "start": "node",
     "dev": "nodemon",
-    "vercel-build": "node ./build.js"
   },
   "name": "p2project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./index.js",
   "author": "",
   "license": "ISC",
   "description": ""
