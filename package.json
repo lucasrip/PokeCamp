@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node",
     "dev": "nodemon",
-    "build":"index.js"
+    "vercel-build": "node ./build.js"
   },
   "name": "p2project",
   "version": "1.0.0",
